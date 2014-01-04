@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5B2709D1877B5DF00D86A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B2709C1877B5DF00D86A36 /* Foundation.framework */; };
+		A5B2709F1877B5DF00D86A36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B2709E1877B5DF00D86A36 /* CoreGraphics.framework */; };
+		A5B270A11877B5DF00D86A36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270A01877B5DF00D86A36 /* UIKit.framework */; };
+		A5B270A71877B5DF00D86A36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5B270A51877B5DF00D86A36 /* InfoPlist.strings */; };
+		A5B270A91877B5DF00D86A36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B270A81877B5DF00D86A36 /* main.m */; };
+		A5B270AD1877B5DF00D86A36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B270AC1877B5DF00D86A36 /* AppDelegate.m */; };
+		A5B270B01877B5DF00D86A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B270AE1877B5DF00D86A36 /* Main.storyboard */; };
+		A5B270B81877B5DF00D86A36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B270B71877B5DF00D86A36 /* Images.xcassets */; };
+		A5B270BF1877B5E000D86A36 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270BE1877B5E000D86A36 /* XCTest.framework */; };
+		A5B270C01877B5E000D86A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B2709C1877B5DF00D86A36 /* Foundation.framework */; };
+		A5B270C11877B5E000D86A36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270A01877B5DF00D86A36 /* UIKit.framework */; };
+		A5B270C91877B5E000D86A36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5B270C71877B5E000D86A36 /* InfoPlist.strings */; };
+		A5B270CB1877B5E000D86A36 /* Pic_PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B270CA1877B5E000D86A36 /* Pic_PongTests.m */; };
+		A5B270DA1877BD6200D86A36 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B270D41877BD6200D86A36 /* camera.png */; };
+		A5B270DB1877BD6200D86A36 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B270D51877BD6200D86A36 /* camera@2x.png */; };
+		A5B270DC1877BD6200D86A36 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B270D61877BD6200D86A36 /* friends.png */; };
+		A5B270DD1877BD6200D86A36 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B270D71877BD6200D86A36 /* friends@2x.png */; };
+		A5B270DE1877BD6200D86A36 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B270D81877BD6200D86A36 /* inbox.png */; };
+		A5B270DF1877BD6200D86A36 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B270D91877BD6200D86A36 /* inbox@2x.png */; };
+		A5B270E31877C3BB00D86A36 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B270E21877C3BB00D86A36 /* InboxViewController.m */; };
+		A5B270ED1877C8E200D86A36 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270E41877C8E200D86A36 /* AudioToolbox.framework */; };
+		A5B270EE1877C8E200D86A36 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270E51877C8E200D86A36 /* CFNetwork.framework */; };
+		A5B270EF1877C8E200D86A36 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270E61877C8E200D86A36 /* CoreLocation.framework */; };
+		A5B270F01877C8E200D86A36 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270E71877C8E200D86A36 /* libz.1.1.3.dylib */; };
+		A5B270F11877C8E200D86A36 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270E81877C8E200D86A36 /* MobileCoreServices.framework */; };
+		A5B270F21877C8E200D86A36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270E91877C8E200D86A36 /* QuartzCore.framework */; };
+		A5B270F31877C8E200D86A36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270EA1877C8E200D86A36 /* Security.framework */; };
+		A5B270F41877C8E200D86A36 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270EB1877C8E200D86A36 /* StoreKit.framework */; };
+		A5B270F51877C8E200D86A36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B270EC1877C8E200D86A36 /* SystemConfiguration.framework */; };
+		A5B270FA1877CAB900D86A36 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B270F91877CAB900D86A36 /* LoginViewController.m */; };
+		A5B270FD1877CACB00D86A36 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B270FC1877CACB00D86A36 /* SignupViewController.m */; };
+		A5B271001877FE5C00D86A36 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B270FF1877FE5C00D86A36 /* EditFriendsViewController.m */; };
+		A5B2710D1878157E00D86A36 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B2710C1878157E00D86A36 /* FriendsViewController.m */; };
+		A5B271111878167E00D86A36 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B271101878167E00D86A36 /* Parse.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5B270C21877B5E000D86A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5B270911877B5DE00D86A36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5B270981877B5DF00D86A36;
+			remoteInfo = "Pic Pong";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5B270991877B5DF00D86A36 /* Pic Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pic Pong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B2709C1877B5DF00D86A36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5B2709E1877B5DF00D86A36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5B270A01877B5DF00D86A36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5B270A41877B5DF00D86A36 /* Pic Pong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pic Pong-Info.plist"; sourceTree = "<group>"; };
+		A5B270A61877B5DF00D86A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5B270A81877B5DF00D86A36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5B270AA1877B5DF00D86A36 /* Pic Pong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pic Pong-Prefix.pch"; sourceTree = "<group>"; };
+		A5B270AB1877B5DF00D86A36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5B270AC1877B5DF00D86A36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5B270AF1877B5DF00D86A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5B270B71877B5DF00D86A36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5B270BD1877B5E000D86A36 /* Pic PongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pic PongTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B270BE1877B5E000D86A36 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A5B270C61877B5E000D86A36 /* Pic PongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pic PongTests-Info.plist"; sourceTree = "<group>"; };
+		A5B270C81877B5E000D86A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5B270CA1877B5E000D86A36 /* Pic_PongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pic_PongTests.m; sourceTree = "<group>"; };
+		A5B270D41877BD6200D86A36 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = "Pic Pong/camera.png"; sourceTree = "<group>"; };
+		A5B270D51877BD6200D86A36 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera@2x.png"; path = "Pic Pong/camera@2x.png"; sourceTree = "<group>"; };
+		A5B270D61877BD6200D86A36 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = friends.png; path = "Pic Pong/friends.png"; sourceTree = "<group>"; };
+		A5B270D71877BD6200D86A36 /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "friends@2x.png"; path = "Pic Pong/friends@2x.png"; sourceTree = "<group>"; };
+		A5B270D81877BD6200D86A36 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = inbox.png; path = "Pic Pong/inbox.png"; sourceTree = "<group>"; };
+		A5B270D91877BD6200D86A36 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "inbox@2x.png"; path = "Pic Pong/inbox@2x.png"; sourceTree = "<group>"; };
+		A5B270E11877C3BB00D86A36 /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		A5B270E21877C3BB00D86A36 /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
+		A5B270E41877C8E200D86A36 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A5B270E51877C8E200D86A36 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A5B270E61877C8E200D86A36 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A5B270E71877C8E200D86A36 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		A5B270E81877C8E200D86A36 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A5B270E91877C8E200D86A36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A5B270EA1877C8E200D86A36 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A5B270EB1877C8E200D86A36 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A5B270EC1877C8E200D86A36 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A5B270F81877CAB900D86A36 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A5B270F91877CAB900D86A36 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A5B270FB1877CACB00D86A36 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		A5B270FC1877CACB00D86A36 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		A5B270FE1877FE5C00D86A36 /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
+		A5B270FF1877FE5C00D86A36 /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
+		A5B2710B1878157E00D86A36 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		A5B2710C1878157E00D86A36 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		A5B271101878167E00D86A36 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5B270961877B5DF00D86A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B270ED1877C8E200D86A36 /* AudioToolbox.framework in Frameworks */,
+				A5B270EE1877C8E200D86A36 /* CFNetwork.framework in Frameworks */,
+				A5B270EF1877C8E200D86A36 /* CoreLocation.framework in Frameworks */,
+				A5B270F01877C8E200D86A36 /* libz.1.1.3.dylib in Frameworks */,
+				A5B270F11877C8E200D86A36 /* MobileCoreServices.framework in Frameworks */,
+				A5B270F21877C8E200D86A36 /* QuartzCore.framework in Frameworks */,
+				A5B271111878167E00D86A36 /* Parse.framework in Frameworks */,
+				A5B270F31877C8E200D86A36 /* Security.framework in Frameworks */,
+				A5B270F41877C8E200D86A36 /* StoreKit.framework in Frameworks */,
+				A5B270F51877C8E200D86A36 /* SystemConfiguration.framework in Frameworks */,
+				A5B2709F1877B5DF00D86A36 /* CoreGraphics.framework in Frameworks */,
+				A5B270A11877B5DF00D86A36 /* UIKit.framework in Frameworks */,
+				A5B2709D1877B5DF00D86A36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B270BA1877B5E000D86A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B270BF1877B5E000D86A36 /* XCTest.framework in Frameworks */,
+				A5B270C11877B5E000D86A36 /* UIKit.framework in Frameworks */,
+				A5B270C01877B5E000D86A36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5B270901877B5DE00D86A36 = {
+			isa = PBXGroup;
+			children = (
+				A5B270E01877BD6A00D86A36 /* Images */,
+				A5B270A21877B5DF00D86A36 /* Pic Pong */,
+				A5B270C41877B5E000D86A36 /* Pic PongTests */,
+				A5B2709B1877B5DF00D86A36 /* Frameworks */,
+				A5B2709A1877B5DF00D86A36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5B2709A1877B5DF00D86A36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5B270991877B5DF00D86A36 /* Pic Pong.app */,
+				A5B270BD1877B5E000D86A36 /* Pic PongTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5B2709B1877B5DF00D86A36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5B271101878167E00D86A36 /* Parse.framework */,
+				A5B270E41877C8E200D86A36 /* AudioToolbox.framework */,
+				A5B270E51877C8E200D86A36 /* CFNetwork.framework */,
+				A5B270E61877C8E200D86A36 /* CoreLocation.framework */,
+				A5B270E71877C8E200D86A36 /* libz.1.1.3.dylib */,
+				A5B270E81877C8E200D86A36 /* MobileCoreServices.framework */,
+				A5B270E91877C8E200D86A36 /* QuartzCore.framework */,
+				A5B270EA1877C8E200D86A36 /* Security.framework */,
+				A5B270EB1877C8E200D86A36 /* StoreKit.framework */,
+				A5B270EC1877C8E200D86A36 /* SystemConfiguration.framework */,
+				A5B2709C1877B5DF00D86A36 /* Foundation.framework */,
+				A5B2709E1877B5DF00D86A36 /* CoreGraphics.framework */,
+				A5B270A01877B5DF00D86A36 /* UIKit.framework */,
+				A5B270BE1877B5E000D86A36 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5B270A21877B5DF00D86A36 /* Pic Pong */ = {
+			isa = PBXGroup;
+			children = (
+				A5B270AE1877B5DF00D86A36 /* Main.storyboard */,
+				A5B270AB1877B5DF00D86A36 /* AppDelegate.h */,
+				A5B270AC1877B5DF00D86A36 /* AppDelegate.m */,
+				A5B270E11877C3BB00D86A36 /* InboxViewController.h */,
+				A5B270E21877C3BB00D86A36 /* InboxViewController.m */,
+				A5B270F81877CAB900D86A36 /* LoginViewController.h */,
+				A5B270F91877CAB900D86A36 /* LoginViewController.m */,
+				A5B270FB1877CACB00D86A36 /* SignupViewController.h */,
+				A5B270FC1877CACB00D86A36 /* SignupViewController.m */,
+				A5B270FE1877FE5C00D86A36 /* EditFriendsViewController.h */,
+				A5B270FF1877FE5C00D86A36 /* EditFriendsViewController.m */,
+				A5B2710B1878157E00D86A36 /* FriendsViewController.h */,
+				A5B2710C1878157E00D86A36 /* FriendsViewController.m */,
+				A5B270B71877B5DF00D86A36 /* Images.xcassets */,
+				A5B270A31877B5DF00D86A36 /* Supporting Files */,
+			);
+			path = "Pic Pong";
+			sourceTree = "<group>";
+		};
+		A5B270A31877B5DF00D86A36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5B270A41877B5DF00D86A36 /* Pic Pong-Info.plist */,
+				A5B270A51877B5DF00D86A36 /* InfoPlist.strings */,
+				A5B270A81877B5DF00D86A36 /* main.m */,
+				A5B270AA1877B5DF00D86A36 /* Pic Pong-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5B270C41877B5E000D86A36 /* Pic PongTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5B270CA1877B5E000D86A36 /* Pic_PongTests.m */,
+				A5B270C51877B5E000D86A36 /* Supporting Files */,
+			);
+			path = "Pic PongTests";
+			sourceTree = "<group>";
+		};
+		A5B270C51877B5E000D86A36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5B270C61877B5E000D86A36 /* Pic PongTests-Info.plist */,
+				A5B270C71877B5E000D86A36 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5B270E01877BD6A00D86A36 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A5B270D41877BD6200D86A36 /* camera.png */,
+				A5B270D51877BD6200D86A36 /* camera@2x.png */,
+				A5B270D61877BD6200D86A36 /* friends.png */,
+				A5B270D71877BD6200D86A36 /* friends@2x.png */,
+				A5B270D81877BD6200D86A36 /* inbox.png */,
+				A5B270D91877BD6200D86A36 /* inbox@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5B270981877B5DF00D86A36 /* Pic Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5B270CE1877B5E000D86A36 /* Build configuration list for PBXNativeTarget "Pic Pong" */;
+			buildPhases = (
+				A5B270951877B5DF00D86A36 /* Sources */,
+				A5B270961877B5DF00D86A36 /* Frameworks */,
+				A5B270971877B5DF00D86A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pic Pong";
+			productName = "Pic Pong";
+			productReference = A5B270991877B5DF00D86A36 /* Pic Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5B270BC1877B5E000D86A36 /* Pic PongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5B270D11877B5E000D86A36 /* Build configuration list for PBXNativeTarget "Pic PongTests" */;
+			buildPhases = (
+				A5B270B91877B5E000D86A36 /* Sources */,
+				A5B270BA1877B5E000D86A36 /* Frameworks */,
+				A5B270BB1877B5E000D86A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5B270C31877B5E000D86A36 /* PBXTargetDependency */,
+			);
+			name = "Pic PongTests";
+			productName = "Pic PongTests";
+			productReference = A5B270BD1877B5E000D86A36 /* Pic PongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5B270911877B5DE00D86A36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Zauce Tech";
+				TargetAttributes = {
+					A5B270BC1877B5E000D86A36 = {
+						TestTargetID = A5B270981877B5DF00D86A36;
+					};
+				};
+			};
+			buildConfigurationList = A5B270941877B5DE00D86A36 /* Build configuration list for PBXProject "Pic Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5B270901877B5DE00D86A36;
+			productRefGroup = A5B2709A1877B5DF00D86A36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5B270981877B5DF00D86A36 /* Pic Pong */,
+				A5B270BC1877B5E000D86A36 /* Pic PongTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5B270971877B5DF00D86A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B270B81877B5DF00D86A36 /* Images.xcassets in Resources */,
+				A5B270DC1877BD6200D86A36 /* friends.png in Resources */,
+				A5B270DD1877BD6200D86A36 /* friends@2x.png in Resources */,
+				A5B270DB1877BD6200D86A36 /* camera@2x.png in Resources */,
+				A5B270DE1877BD6200D86A36 /* inbox.png in Resources */,
+				A5B270A71877B5DF00D86A36 /* InfoPlist.strings in Resources */,
+				A5B270DA1877BD6200D86A36 /* camera.png in Resources */,
+				A5B270B01877B5DF00D86A36 /* Main.storyboard in Resources */,
+				A5B270DF1877BD6200D86A36 /* inbox@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B270BB1877B5E000D86A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B270C91877B5E000D86A36 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5B270951877B5DF00D86A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B270FA1877CAB900D86A36 /* LoginViewController.m in Sources */,
+				A5B270AD1877B5DF00D86A36 /* AppDelegate.m in Sources */,
+				A5B270A91877B5DF00D86A36 /* main.m in Sources */,
+				A5B2710D1878157E00D86A36 /* FriendsViewController.m in Sources */,
+				A5B270E31877C3BB00D86A36 /* InboxViewController.m in Sources */,
+				A5B271001877FE5C00D86A36 /* EditFriendsViewController.m in Sources */,
+				A5B270FD1877CACB00D86A36 /* SignupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B270B91877B5E000D86A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B270CB1877B5E000D86A36 /* Pic_PongTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5B270C31877B5E000D86A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5B270981877B5DF00D86A36 /* Pic Pong */;
+			targetProxy = A5B270C21877B5E000D86A36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5B270A51877B5DF00D86A36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B270A61877B5DF00D86A36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5B270AE1877B5DF00D86A36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B270AF1877B5DF00D86A36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5B270C71877B5E000D86A36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B270C81877B5E000D86A36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5B270CC1877B5E000D86A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5B270CD1877B5E000D86A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5B270CF1877B5E000D86A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zachnagengast09/Drive/App/PicPong/Pic,
+					Pong,
+					/Users/zachnagengast09/Drive/App/PicPong/Pic,
+					Pong,
+					/Users/zachnagengast09/Drive/App/PicPong/Pic,
+					Pong,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pic Pong/Pic Pong-Prefix.pch";
+				INFOPLIST_FILE = "Pic Pong/Pic Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5B270D01877B5E000D86A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zachnagengast09/Drive/App/PicPong/Pic,
+					Pong,
+					/Users/zachnagengast09/Drive/App/PicPong/Pic,
+					Pong,
+					/Users/zachnagengast09/Drive/App/PicPong/Pic,
+					Pong,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pic Pong/Pic Pong-Prefix.pch";
+				INFOPLIST_FILE = "Pic Pong/Pic Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A5B270D21877B5E000D86A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pic Pong.app/Pic Pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pic Pong/Pic Pong-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pic PongTests/Pic PongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A5B270D31877B5E000D86A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pic Pong.app/Pic Pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pic Pong/Pic Pong-Prefix.pch";
+				INFOPLIST_FILE = "Pic PongTests/Pic PongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5B270941877B5DE00D86A36 /* Build configuration list for PBXProject "Pic Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B270CC1877B5E000D86A36 /* Debug */,
+				A5B270CD1877B5E000D86A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5B270CE1877B5E000D86A36 /* Build configuration list for PBXNativeTarget "Pic Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B270CF1877B5E000D86A36 /* Debug */,
+				A5B270D01877B5E000D86A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5B270D11877B5E000D86A36 /* Build configuration list for PBXNativeTarget "Pic PongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B270D21877B5E000D86A36 /* Debug */,
+				A5B270D31877B5E000D86A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5B270911877B5DE00D86A36 /* Project object */;
+}
